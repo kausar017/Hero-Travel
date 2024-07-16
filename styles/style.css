@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+/* defold style */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* shered style */
+.btn-prymari{
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+}
+
+/* nav-bar style heare */
+.navbar{
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 1180px;
+    height: 43px;
+    justify-content: space-between;
+    margin: 5rem auto;
+    display: flex;
+}
+.img-title{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.nav-title{
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.travel{
+    color: rgb(255, 84, 0);
+}
+.nav-itme{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-itme a{
+    text-decoration: none;
+    padding: 30px;
+    color: rgb(66, 66, 71);
+    font-size: 18px;
+    font-weight: 400;  
+}
+
+/* main (section-1) start heare */
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1170px;
+        height: 500px; 
+        border-radius: 16px;
+        margin: 0 auto;
+        background-image: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%),  url('../Images/Group\ 13\ \(1\)\ \(1\).png'); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+
+    .container-title{
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 80px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .container-discription{
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0 247px;
+        gap: 24px;
+    }
+    .box-item{
+        padding: 12px 18px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.3);
+        margin-top: 64px ;
+    }
+   input, select{
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        padding: 20px 20px;
+        border: none;
+        outline: none;
+        width: 174px;
+        font-size: 16px;
+        color: rgba(19, 19, 24, 0.5);
+        margin: 24px;
+    }
+    .button{
+        padding: 20px 65px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+/* main (section-1) end heare */
+
+
+
+/* @ midea query style start {small divice} */
+@media screen and (max-width:576px){
+    .navbar{
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      margin: 20px;
+    }
+    .nav-itme{
+        flex-direction: column;
+    }
+    .nav-title{
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .section-1{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        width: auto;
+        height: auto;
+    }
+    .container-title{
+        font-size: 40px;
+    }
+    .container-discription{
+        text-align: center;
+        margin: auto;
+        gap: 24px;
+        margin: 0 20px;
+    }
+    .box-item{
+      text-align: center;
+      background-color: transparent;
+      
+    }
+}
+/* @ midea query style start {mideam divice} */
+
+@media screen and (min-width:576px) and (max-width: 972px) {
+    .navbar{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px;
+        justify-content: center;
+      }
+      .nav-itme{
+          /* flex-direction: column; */
+      }
+      .nav-title{
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .section-1{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        width: auto;
+        height: auto;
+    }
+    .container-title{
+        font-size: 40px;
+    }
+    .container-discription{
+        text-align: center;
+        margin: auto;
+        gap: 24px;
+        margin: 0 20px;
+    }
+    .box-item{
+      text-align: center;
+      background-color: transparent;
+      
+    }
+}
